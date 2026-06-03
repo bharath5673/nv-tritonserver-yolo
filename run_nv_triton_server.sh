@@ -1,5 +1,5 @@
 docker run --gpus all \
-  -v tmp/triton_repo:/models \
+  -v /home/bharath/Downloads/test_codes/hcl_task_32/tmp/triton_repo:/models \
   -p 8000:8000 \
   bharath5673/nv-tritonserver-yolo:24.09-py3 \
   tritonserver --model-repository=/models
